@@ -1,0 +1,196 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+@font-face {
+  font-family: 'proxima_nova-bold';
+  src: url('../fonts/proxima_nova_bold-webfont.woff2') format('woff2'),
+  url('../fonts/proxima_nova_bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'proxima_nova-light';
+  src: url('../fonts/proxima_nova_light-webfont.woff2') format('woff2'),
+  url('../fonts/proxima_nova_light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
+  url('../fonts/proxima_nova_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: @font-size-base;
+}
+
+body {
+  font-family: @font-family-base;
+  color: @color-base;
+  background: @bkg-base;
+  line-height: normal;
+}
+
+section {
+  padding: 150px 0;
+}
+
+h1 {
+  font-size: 2.667rem;
+  color: #fff;
+  font-family: @font-family-bold;
+  margin: 0 0 30px;
+}
+
+h2 {
+  font-size: 2.19rem;
+  font-family: @font-family-bold;
+  margin: 0 0 40px;
+  color: @color-dark;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+.mr-3 {
+  margin-right: 30px;
+}
+
+.mr-4 {
+  margin-right: 40px;
+}
+
+.mr-5 {
+  margin-right: 50px;
+}
+
+
+a {
+  color: @brand-primary;
+
+  &:focus, &:active, &:hover {
+    outline: none;
+  }
+}
+
+small {
+  font-size: 80%
+}
+
+strong {
+  font-family: @font-family-bold;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+@media (max-width: @breakpoint-md) {
+  html {
+    font-size: @font-size-base - 1px;
+  }
+}
+
+@media (max-width: @breakpoint-sm) {
+  html {
+    font-size: @font-size-base - 2px;
+  }
+}

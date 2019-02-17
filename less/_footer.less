@@ -1,0 +1,164 @@
+footer {
+  background: @color-dark;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: #aaabb6;
+  font-size: 14px;
+
+  a {
+    color: #aaabb6;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .logo {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .region-selector-button {
+    margin: 0 auto;
+    float: right;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    min-width: 280px;
+    -webkit-transition: all .1s ease-in-out 0s;
+    -o-transition: all .1s ease-in-out 0s;
+    -moz-transition: all .1s ease-in-out 0s;
+    transition: all .1s ease-in-out 0s;
+    background-color: transparent;
+    img {
+      position: relative;
+      top: 5px;
+      margin-right: 10px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:after {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      content: "";
+      display: inline-block;
+      width: .4em;
+      height: .4em;
+      border-right: 1px solid #F2F2F6;
+      border-top: 1px solid #F2F2F6;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+  }
+
+  .devices {
+    margin-top: 30px;
+
+    > div {
+      display: inline-block;
+      width: 20%;
+      text-align: center;
+      font-size: 16px;
+
+      i {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .footer-links {
+    border-left: solid 1px @border-color;
+    padding-left: 30px;
+    margin-bottom: 30px;
+
+    .title {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+
+  .social {
+    text-align: right;
+    margin-top: 10px;
+    > a {
+      margin-left: 20px;
+      i {
+        font-size: 17px;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .icon-foundation, .icon-blog {
+    font-size: 26px;
+    position: relative;
+    top: 7px;
+    margin-right: 5px;
+  }
+
+
+  .copy {
+    border-top: solid 1px @border-color;
+    margin-top: 40px;
+    padding-top: 40px;
+
+    .year {
+      float: left;
+    }
+
+    .links {
+      float: right;
+
+      > a {
+        margin: 0 20px;
+      }
+    }
+  }
+
+  @media (max-width: @breakpoint-md) {
+    text-align: center;
+
+    .logo {
+      text-align: center;
+      float: none;
+    }
+
+    .region-selector-button {
+      float: none;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .devices {
+      margin-bottom: 40px;
+    }
+
+    .social {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .copy {
+      .year, .links {
+        float: none;
+      }
+      .year {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media (max-width: @breakpoint-sm) {
+    .footer-links {
+      border: none;
+    }
+  }
+}

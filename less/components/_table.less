@@ -1,0 +1,136 @@
+.products-table {
+  margin: 80px auto;
+  border-collapse: collapse;
+  width: 100%;
+
+  .description {
+    text-align: left;
+    vertical-align: middle;
+    font-size: 1.714rem;
+    font-family: @font-family-bold;
+    color: @color-dark;
+  }
+
+  .item {
+    width: 20%;
+    padding: 0 10px;
+    vertical-align: top;
+    text-align: center;
+
+    i {
+      display: block;
+      font-size: 60px;
+      color: #aaabb6;
+      margin-bottom: 20px;
+
+      &.icon-is, &.icon-premier {
+        color: @brand-primary;
+      }
+    }
+
+    span {
+      display: block;
+      font-size: 18px;
+    }
+
+    .btn {
+      margin: 20px 0;
+    }
+  }
+
+  .text {
+    border-bottom: solid 1px #E7E7EF;
+    font-size: 14px;
+    padding: 10px 0;
+    font-family: @font-family-regular;
+
+    strong {
+      color: @color-dark;
+      font-size: 16px;
+      display: block;
+    }
+  }
+
+  .opt {
+    width: 20%;
+    background: #f2f2f6;
+    text-align: center;
+    vertical-align: middle;
+    border-left: solid 1px #fff;
+    border-bottom: solid 1px #E7E7EF;
+
+    &.empty {
+      background: #fff;
+    }
+
+    &.active {
+      .icon-dot {
+        background: @brand-primary;
+      }
+    }
+
+    .icon-dot {
+      background: #727888;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }
+
+  @media (max-width: @breakpoint-lg) {
+    .item {
+      padding: 0 5px;
+    }
+  }
+
+  @media (max-width: @breakpoint-md) {
+    tr {
+      position: relative;
+
+      td {
+        width: auto;
+        float: left !important;
+        border-right: 0 !important;
+
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+
+      &:before, &:after {
+        content: "";
+        display: table;
+        line-height: 0;
+      }
+    }
+
+    .description {
+      display: none;
+    }
+
+    .opt, .item {
+      width: 50%;
+      float: left;
+      border-left: none;
+      &.empty {
+        background: #f2f2f6;
+        height: 36px;
+      }
+    }
+
+    .opt {
+      height: 36px;
+    }
+
+    .item {
+      padding: 0;
+    }
+
+    .text {
+      width: 100%;
+      float: left;
+    }
+  }
+}

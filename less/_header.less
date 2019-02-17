@@ -1,0 +1,139 @@
+.header-hero {
+  background: url(../img/hero.jpg) no-repeat center top;
+  background-size: cover;
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+
+  padding-top: 30px;
+  text-align: center;
+  color: #fff;
+
+  .header-text {
+    font-size: 1.143rem;
+    max-width: 700px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 3.333rem;
+      color: #fff;
+    }
+  }
+
+  @media (max-width: @breakpoint-md) {
+    .header-text {
+      margin: 0 30px;
+    }
+  }
+}
+
+
+.logo {
+  float: left;
+
+  img {
+    width: 118px;
+  }
+}
+
+.navbar {
+  margin-bottom: 200px;
+}
+
+.navbar-nav {
+  float: right;
+
+  .nav-item {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+
+    .nav-link {
+      font-size: 13px;
+      color: #fff;
+      text-decoration: none;
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+.menu-hide {
+  width: 320px;
+  right: -320px;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  transition: all .6s ease-in-out;
+  nav {
+    ul {
+      li {
+        height: 70px;
+        list-style-type: none;
+        text-align: center;
+        line-height: 70px;
+        transition: all .5s ease;
+        border-top: solid 1px @bkg-color;
+        &:hover {
+          background-color: @brand-primary;
+          transition: all .5s ease;
+          a {
+            color: #fff;
+          }
+        }
+        a {
+          padding: 30px 25px;
+          text-decoration: none;
+          color: @color-dark;
+        }
+      }
+    }
+  }
+
+  &.show {
+    right: 0;
+    background-color: #fff;
+    transition: all .6s ease-in-out;
+  }
+
+  .menu-close {
+    color: @color-base;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    i {
+      position: absolute;
+      cursor: pointer;
+      right: 15px;
+      top: 20px;
+      -webkit-text-stroke: 4px #fff;
+    }
+  }
+}
+
+
+@media (max-width: @breakpoint-md) {
+  .navbar-nav {
+    span {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: @breakpoint-sm) {
+  .navbar {
+    margin-bottom: 100px;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin-left: 10px;
+    }
+  }
+}
+
+

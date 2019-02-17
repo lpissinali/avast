@@ -1,0 +1,48 @@
+.inapp {
+  width: 640px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+
+  .notice {
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    font-family: @font-family-bold;
+    i {
+      position: relative;
+      top: 7px;
+      font-size: 36px;
+      margin-top: -15px;
+      display: inline-block;
+    }
+    &.notice-warning {
+      background: #f5203e;
+    }
+  }
+
+  .message {
+    padding: 50px;
+    .info1 {
+      font-size: 22px;
+    }
+    .info2 {
+      font-size: 28px;
+      font-family: @font-family-bold;
+      margin: 20px 0;
+      color: @color-dark;
+    }
+    .price {
+      font-size: 16px;
+      margin-bottom: 10px;
+      .price-old {
+        text-decoration: line-through;
+        margin: 0 15px;
+      }
+    }
+    .btn {
+      min-width: 170px;
+      margin-bottom: 10px;
+    }
+  }
+}
