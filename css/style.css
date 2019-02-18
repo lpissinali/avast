@@ -1508,6 +1508,7 @@ footer .copy .links > a {
   opacity: 0.6;
   text-decoration: line-through;
   margin: 25px 0 12px;
+  display: inline-block;
 }
 .plan-selector .item .price {
   font-size: 2.667rem;
@@ -1539,13 +1540,9 @@ footer .copy .links > a {
     margin: 0 auto 30px;
   }
   .plan-selector .item {
-    width: 170px;
-    margin: 0 5px 30px;
-  }
-}
-@media (max-width: 480px) {
-  .plan-selector .item {
     float: none;
+    margin: 0 auto 30px;
+    display: block;
   }
 }
 .header-links {
